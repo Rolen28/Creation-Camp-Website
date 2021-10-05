@@ -1,0 +1,38 @@
+Body {
+  background-image: url(backgroundpattern.jpg);
+}
+
+#Logo {
+  position: relative;
+}
+
+#Pages {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  padding: 3px;
+  border: black 5px solid;
+}
+
+#welcome {
+  text-align: center;
+}
+
+#desc {
+  text-align: center;
+}
+
+#form {
+  text-align: center;
+}
+
+#pic1 {
+  position: absolute;
+  top: 35%;
+}
+
+#pic2 {
+  position: absolute;
+  top: 35%;
+  right: 0.5%;
+}
