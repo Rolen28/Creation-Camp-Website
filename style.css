@@ -23,7 +23,18 @@ Body {
 }
 
 #form {
+  position: absolute;
+  left: 25%;
   text-align: center;
+  border: black 5px solid;
+  width: 50%;
+  background-color: #F3EEB1;
+}
+
+#back {
+  position: absolute;
+  left: 45%;
+  top: 65%;
 }
 
 #pic1 {
@@ -35,4 +46,9 @@ Body {
   position: absolute;
   top: 35%;
   right: 0.5%;
+}
+
+#pic3 {
+  position: absolute;
+  left: 42%;
 }
