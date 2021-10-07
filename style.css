@@ -1,5 +1,5 @@
 Body {
-  background-image: url(backgroundpattern.jpg);
+  color: white;
 }
 
 #Logo {
@@ -12,23 +12,45 @@ Body {
   top: 2%;
   padding: 3px;
   border: black 5px solid;
+  background-color: #DCDEF7;
 }
 
 #welcome {
+  position: relative;
   text-align: center;
+  color: black;
+}
+
+#firstdesc {
+  position: relative;
+  text-align: center;
+  width: 25%;
+  color: black;
+}
+
+#seconddesc {
+  position: absolute;
+  top: 35%;
+  right: 2.5%;
+  text-align: center;
+  width: 50%;
+  color: black;
 }
 
 #desc {
+  position: relative;
   text-align: center;
+  color: black;
 }
 
 #form {
-  position: absolute;
-  left: 25%;
+  position: relative;
+  bottom: 0.5%;
   text-align: center;
   border: black 5px solid;
-  width: 50%;
-  background-color: #F3EEB1;
+  width: 25%;
+  color: black;
+  background-color: #DCDEF7;
 }
 
 #back {
@@ -37,18 +59,56 @@ Body {
   top: 65%;
 }
 
+#contact {
+  text-align: center;
+  position: absolute;
+  top: 58%;
+  right: 0%;
+  left: 0%;
+  bottom: -20%;
+  padding: 5px;
+  border-top: black 5px solid;
+  background-color: #DCDEF7;
+  color: black;
+}
+
+a:link {color: #6E2FEC;}
+a:visited {color: #6E2FEC;}
+a:hover {color: #DCDEF7;}
+a:active {color: #DCDEF7;}
+
 #pic1 {
   position: absolute;
-  top: 35%;
+  top: 57%;
+  right: 55%;
 }
 
 #pic2 {
   position: absolute;
-  top: 35%;
-  right: 0.5%;
+  top: 36%;
+  right: 55%;
 }
 
 #pic3 {
   position: absolute;
-  left: 42%;
+  top: 40%;
+  right: 5%;
+}
+
+#deskpic {
+  position: absolute;
+  top: 82%;
+  right: 55%;
+}
+
+#chromebookpic {
+  position: absolute;
+  top: 107%;
+  right: 55%;
+}
+
+#sublogo {
+  position: absolute;
+  left: 0.5%;
+  bottom: -20%
 }
