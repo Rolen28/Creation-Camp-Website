@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
+
 Body {
   color: white;
 }
@@ -7,6 +9,8 @@ Body {
 }
 
 #Pages {
+  font-family: 'Montserrat';
+  font-size: 13.5px;
   position: absolute;
   right: 2%;
   top: 2%;
@@ -16,35 +20,47 @@ Body {
 }
 
 #welcome {
+  font-family: 'Montserrat';
   position: relative;
   text-align: center;
   color: black;
 }
 
 #firstdesc {
+  font-family: 'Poppins';
+  font-weight: 200;
   position: relative;
+  left: 5%;
   text-align: center;
   width: 25%;
   color: black;
 }
 
-#seconddesc {
+#seconddesc { 
+  font-family: 'Poppins';
+  font-weight: 200;
   position: absolute;
   top: 35%;
   right: 2.5%;
   text-align: center;
-  width: 50%;
+  width: 40%;
   color: black;
 }
   
 #desc {
+  font-family: 'Poppins';
+  font-weight: 200;
+  font-size: 14.5px;
   position: relative;
   text-align: center;
   color: black;
 }
 
 #form {
+  font-family: 'Poppins';
+  font-weight: 200;
   position: relative;
+  left: 5%;
   bottom: 0.5%;
   text-align: center;
   border: black 5px solid;
@@ -62,31 +78,30 @@ Body {
 #contact {
   text-align: center;
   position: absolute;
-  top: 58%;
+  top: 70%;
   right: 0%;
   left: 0%;
-  bottom: -20%;
-  padding: 5px;
+  padding: 10px;
   border-top: black 5px solid;
   background-color: #DCDEF7;
   color: black;
 }
 
-a:link {color: #6E2FEC;}
-a:visited {color: #6E2FEC;}
-a:hover {color: #DCDEF7;}
-a:active {color: #DCDEF7;}
+a:link {color: #6E2FEC; text-decoration: none;}
+a:visited {color: #6E2FEC; text-decoration: none;}
+a:hover {color: #DCDEF7; text-decoration: none;}
+a:active {color: #DCDEF7; text-decoration: none;}
 
 #pic1 {
   position: absolute;
-  top: 57%;
-  right: 55%;
+  top: 70%;
+  right: 45%;
 }
 
 #pic2 {
   position: absolute;
   top: 36%;
-  right: 55%;
+  right: 45%;
 }
 
 #pic3 {
@@ -97,18 +112,18 @@ a:active {color: #DCDEF7;}
 
 #deskpic {
   position: absolute;
-  top: 82%;
-  right: 55%;
+  top: 104%;
+  right: 45%;
 }
 
 #chromebookpic {
   position: absolute;
-  top: 107%;
-  right: 55%;
+  top: 140%;
+  right: 45%;
 }
 
 #sublogo {
   position: absolute;
   left: 0.5%;
-  bottom: -20%
+  bottom: -32%
 }
