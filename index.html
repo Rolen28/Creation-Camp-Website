@@ -45,30 +45,36 @@
       
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
 
-    <div id="form"><h3>If you are interested in CreationCamp, please fill out this form:</h3>
-      <form action="mailto:akhan70@ocdsb.ca" method="post">
-      Name: <input type="text" name="name"/>
+    <div id="form"><h3>If you are interested in CreationCamp, please fill out this form (* means 'required'):</h3>
+      <form action="https://formsubmit.co/nadeemaljaber@gamecreationcamp.com" method="POST">
+      Name*: <input type="text" name="name" required/>
 
       <br />
       <br />
 
-      Age: <input type="text" name="age"/>
+      Age*: <input type="text" name="age" required/>
 
       <br />
       <br />
 
-      Male: <input type="radio" name="gender"/>
-      Female: <input type="radio" name="gender"/>
+      <input type="radio" name="gender" id="Male" value="Male"/>
+      <label for="html">Male</label>
+      <br />
+      <input type="radio" name="gender" id="Female" value="Female"/>
+      <label for="html">Female</label>
+      <br />
+      <input type="radio" name="gender" id="Prefer not to say" value="Prefer not to say"/>
+      <label for="html">Prefer not to say</label>
 
       <br />
       <br />
 
-      Phone Number: <input type="text" name="phone number" value="(123) 456 - 7890"/>
+      Phone Number*: <input type="tel" name="phone number" placeholder="(123)-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
 
       <br />
       <br />
       
-      Email: <input type="text" name="email" value="example@someplace.com"/>
+      Email*: <input type="email" name="email" placeholder="example@someplace.com" required/>
 
       <br />
       <br />
