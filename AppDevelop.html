@@ -38,18 +38,28 @@
     
     <br />
     
-    <form action="https://formsubmit.co/nadeemaljaber@gamecreationcamp.com" method="post">
-      Name*: <input type="text" name="name" required/>
+    <form Name="ContactForm" action="https://formsubmit.co/akhan70@ocdsb.ca" onsubmit="return validateContact()" method="post">
+      Name*: <input type="text" name="name"/>
 
       <br />
       <br />
 
-      Email*: <input type="text" name="email" placeholder="example@someplace.com" required/>
+      Email*: <input type="text" name="email" placeholder="example@someplace.com"/>
 
       <br />
       <br />
 
-      Message:
+      Stream*: <select name="stream">
+        <option value="Blank"> </option>
+        <option value="App">Web App Development</option>
+        <option value="Game">Game Development</option>
+        <option value="Content">Content Creation</option>
+      </select>
+
+      <br />
+      <br />
+
+      Message*:
       <br />
       <textarea name="message" rows="8" cols="40"></textarea>
 
