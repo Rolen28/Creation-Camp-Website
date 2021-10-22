@@ -13,6 +13,19 @@ function validateEmail(emailId) {
   }
 }    
 
+function personContact(name, email, stream, message){
+  this.name = name;
+  this.email = email;
+  this.stream = stream;
+  this.message = message;
+}
+
+function storeContact() {
+  var log = new personContact(document.ContactForm.name.value, document.ContactForm.email.value, document.ContactForm.stream.value, document.ContactForm.message.value)
+
+  console.log(log)
+}
+
 function validateForm() {
   let x = document.TitleForm.name.value;
   let y = document.TitleForm.age.value;
