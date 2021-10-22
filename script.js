@@ -1,13 +1,14 @@
 function validateEmail(emailId) {
-  var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-  if(emailId.value.match(mailformat)) {
+  var mailFormat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  if(emailId.value.match(mailFormat)) {
     alert("Thank you for submitting!");
-    document.form1.text1.focus();
+    //document.ContactForm.text1.focus();
+    return true;
   }
 
   else {
     alert("Invalid email address.");
-    document.form1.text1.focus();
+    //document.ContactForm.text1.focus();
     return false;
   }
 }    
@@ -87,9 +88,9 @@ function validateContact() {
         }
 
         else {
-          validateEmail(y);
+          return (validateEmail(document.ContactForm.email));
         }
-      }  
+      }
     }
   }
 }
