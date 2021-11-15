@@ -3,52 +3,70 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+
+    <!--This line of code affects what is placed in the text box on the small tab on the top of the screen-->
     <title>Creation Camp - Web App Development</title>
+
+    <!--This line of code brings in all the CSS code from the style.css file-->
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+
+    <!--This line of code brings in all the JavaScript code from the script.js file-->
     <script src="script.js"></script>
 
+    <!--This line of code brings in the image from the Creation Camp Logo.png and sets its size on the webpage-->
     <div id="Logo"><a href="index.html" title="Home"><img src="Creation Camp Logo.png" height="80"/></a></div>
 
+    <!--This line of code creates the navigation bar at the top of the webpage. It sets up the text and links-->
     <div id="Pages"><h1><a href="AppDevelop.html" title="Web App Development">Web App Development</a>   <a href="GameDevelop.html" title="Game Development">Game Development</a>  <a href="ContentCreate.html" title="Content Creation">Content Creation</a></h1></div>
 
+    <!--This line of code creates the Title message at the top of the page so users know where they are-->
     <div id="welcome"><h1>Web App Development</h1></div>
 
+    <!--This line of code creates the horizontal line below the Title message-->
     <hr />
 
+    <!--This line of code creates the small message before the list of skills that students will learn from this course-->
     <div id="desc"><h2>In Web App Development, students will learn about :
     
+    <!--This line of code creates a line break between the earlier message and the list-->
     <br />
     
+    <!--The next 5 lines of code are used to create the list of skills that students will learn from this course-->
     <ul style = "list-style: inside; marker-offset:2em;">
       <li>Website Creation</li>
       <li>Front End Development</li>
       <li>Back End Development</li>
+    </ul></h2></div>
 
-      <br />
-      <br />
-      
-    </ul></h2>
-    </div>
+    <!--This is a bit of code that was used to let users gain access to the apply.html page. Since we no longer need to use that file, this bit of code has been commented out-->
+    <!--<div id="pic3"><a href="apply.html"><img src="applynow.png" height="100"/></a></div>-->
 
-   <!-- <div id="pic3"><a href="apply.html"><img src="applynow.png" height="100"/></a></div>-->
-
+    <!--This line of code creates the message that is above the contact form-->
     <div id="contact"><h2>Contact us to for availiable courses</h2>
     
+    <!--This line of code creates a line break between the earlier message and the form-->
     <br />
     
+    <!--Lines 55-90 are used to create the form on the bottom of the page. Lines that are blank are there for pleasant formatting and lines with <br /> are used for line breaks-->
+
+    <!--This line of code is used to create the form identity and get it to use a function for form validation and a program to have its contents emailed to someone-->
     <form Name="ContactForm" action="https://formsubmit.co/akhan70@ocdsb.ca" onsubmit="return validateContact()" method="post">
+
+      <!--This line of code is used to create the Name section of the contact form-->
       Name*: <input type="text" name="name"/>
 
       <br />
       <br />
 
+      <!--This line of code is used to create the Email section of the contact form-->
       Email*: <input type="text" name="email" placeholder="example@someplace.com"/>
 
       <br />
       <br />
 
+      <!--Lines 70-75 are used to create the Stream section of the contact form-->
       Stream*: <select name="stream">
         <option value="Blank"> </option>
         <option value="App">Web App Development</option>
@@ -59,6 +77,7 @@
       <br />
       <br />
 
+      <!--This line of code is used to create the Message section of the contact form-->
       Message*:
       <br />
       <textarea name="message" rows="8" cols="40"></textarea>
@@ -66,9 +85,11 @@
       <br />
       <br />
 
-      <input type="submit" name="submit"/>
+      <!--This line of code is used to create the submit button-->
+      <input type="submit" name="submit" onclick="storeContact()"/>
     </form></div>
 
+    <!--This line of code is used to create the small logo at the bottom left corner of the page-->
     <div id="sublogo"><img src="sublogo.png" height="65"/></div>
   </body>
 </html>

@@ -1,13 +1,17 @@
+/*This line of code is used to add in some google fonts into the website*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
 
+/*Lines 5-7 are used to control the attributes of the pages as a whole. The attribute(s) set are: color (changes background of page to white)*/
 Body {
   color: white;
 }
 
+/*Lines 10-12 are used to control the attributes of the logo at the top left of each page. The attribute(s) set are: position (set to be relative to its default position)*/
 #Logo {
   position: relative;
 }
 
+/*Lines 15-24 are used to control the attributes of the page selection box on the top right of each page. The attribute(s) set are: font-family (sets text font to Montserrat), font-size (sets size of the text to 13.5px), position (set to be absolute to the position given), right (sets the object to be 2% of the screen away from the right), top (sets the object to be 2% of the screen away from the top), padding (sets the size of the edge of the object to be 3px), border (sets the border of the object to be black, 5px thick, and solid), background-color (sets the background of the object to be the color #EEEFF7)*/
 #Pages {
   font-family: 'Montserrat';
   font-size: 13.5px;
@@ -19,6 +23,7 @@ Body {
   background-color: rgb(238, 239, 247);
 }
 
+/*Lines 27-32 are used to control the attributes of the welcome sign on the home page and the title on the subpages. The attribute(s) set are: font-family (sets text font to Montserrat), position (set to be relative to its default position), text-align (sets position of the text to be in the center of the object), color (sets text color to black)*/
 #welcome {
   font-family: 'Montserrat';
   position: relative;
@@ -26,6 +31,7 @@ Body {
   color: black;
 }
 
+/*Lines 35-43 are used to control the attributes of the bit of text on the left of the home page. The attribute(s) set are: font-family (sets text font to Poppins), font-weight (sets the boldness of the text to 200), position (set to be relative to its default position), left (sets the object to be 5% of the screen away from the left), text-align (sets position of the text to be in the center of the object), width (sets the object's width to take up 25% of the page), color (sets text color to black)*/
 #firstdesc {
   font-family: 'Poppins';
   font-weight: 200;
@@ -36,6 +42,7 @@ Body {
   color: black;
 }
 
+/*Lines 46-55 are used to control the attributes of the text describing the program on the right of the home page. The attribute(s) set are: font-family (sets text font to Poppins), font-weight (sets the boldness of the text to 200), position (set to be absolute to the position given), top (sets the object to be 35% of the screen away from the top), right (sets the object to be 2.5% of the screen away from the right), text-align (sets position of the text to be in the center of the object), width (sets the object's width to take up 40% of the page), color (sets text color to black)*/
 #seconddesc { 
   font-family: 'Poppins';
   font-weight: 200;
@@ -46,7 +53,8 @@ Body {
   width: 40%;
   color: black;
 }
-  
+
+/*Lines 58-65 are used to control the attributes of the small description and list on the sub-pages. The attribute(s) set are: font-family (sets text font to Poppins), font-weight (sets the boldness of the text to 200), font-size (sets size of the text to 14.5px), position (set to be relative to its default position), text-align (sets position of the text to be in the center of the object), color (sets text color to black)*/
 #desc {
   font-family: 'Poppins';
   font-weight: 200;
@@ -56,6 +64,7 @@ Body {
   color: black;
 }
 
+/*Lines 68-79 are used to control the attributes of the form on the home page. The attribute(s) set are: font-family (sets text font to Poppins), font-weight (sets the boldness of the text to 200), position (set to be relative to its default position), left (sets the object to be 5% of the screen away from the left), bottom (sets the object to be 0.5% of the screen away from the bottom), text-align (sets position of the text to be in the center of the object), border (sets the border of the object to be black, 5px thick, and solid), width (sets the object's width to take up 25% of the page), color (sets text color to black), background-color (sets the background of the object to be the color #DCDEF7)*/
 #form {
   font-family: 'Poppins';
   font-weight: 200;
@@ -69,12 +78,14 @@ Body {
   background-color: #DCDEF7;
 }
 
+/*Lines 82-86 are used to control the attributes of the Go Back link on the now unused apply page. The attribute(s) set are: position (set to be absolute to the position given), left (sets the object to be 45% of the screen away from the left), top (sets the object to be 65% of the screen away from the top)*/
 #back {
   position: absolute;
   left: 45%;
   top: 65%;
 }
 
+/*Lines 89-101 are used to control the attributes of the contact forms on the sub-pages. The attribute(s) set are: font-family (sets text font to Poppins), font-weight (sets the boldness of the text to 200), text-align (sets position of the text to be in the center of the object), position (set to be absolute to the position given), top (sets the object to be 70% of the screen away from the top), right (sets the object to be 0% of the screen away from the right), left (sets the object to be 0% of the screen away from the left), padding (sets the size of the edge of the object to be 10px), border-top (sets the top of the border of the object to be black, 5px thick, and solid), background-color (sets the background of the object to be the color #DCDEF7), color (sets text color to black)*/
 #contact {
   font-family: 'Poppins';
   font-weight: 200;
@@ -89,41 +100,48 @@ Body {
   color: black;
 }
 
+/*Lines 104-107 are used to control the attributes of the different states of the website hyperlinks. The attribute(s) set are: link (the color when the link is unvisited is #6E2FEC and there is no underline), visited (the color when the link haas been visited is #6E2FEC and there is no underline), hover (the color when the cursor is hovering over the link is #DCDEF7 and there is no underline), active (the color when the link is being clicked is #DCDEF7 and there is no underline)*/
 a:link {color: #6E2FEC; text-decoration: none;}
 a:visited {color: #6E2FEC; text-decoration: none;}
 a:hover {color: #DCDEF7; text-decoration: none;}
 a:active {color: #DCDEF7; text-decoration: none;}
 
+/*Lines 110-114 are used to control the attributes of the image of a boy watching a eacher on a computer on the home page. The attribute(s) set are: position (set to be absolute to the position given), top (sets the object to be 70% of the screen away from the top), right (sets the object to be 45% of the screen away from the right)*/
 #pic1 {
   position: absolute;
   top: 70%;
   right: 45%;
 }
 
+/*Lines 117-121 are used to control the attributes of the image of a girl coding on a computer on the home page. The attribute(s) set are: position (set to be absolute to the position given), top (sets the object to be 36% of the screen away from the top), right (sets the object to be 45% of the screen away from the right)*/
 #pic2 {
   position: absolute;
   top: 36%;
   right: 45%;
 }
 
+/*Lines 124-128 are used to control the attributes of the image of the now unused submit button on the sub-pages. The attribute(s) set are: position (set to be absolute to the position given), top (sets the object to be 40% of the screen away from the top), right (sets the object to be 5% of the screen away from the right)*/
 #pic3 {
   position: absolute;
   top: 40%;
   right: 5%;
 }
 
+/*Lines 131-135 are used to control the attributes of the image of several kids working on a desktop ccomputer. The attribute(s) set are: position (set to be absolute to the position given), top (sets the object to be 104% of the screen away from the top), right (sets the object to be 45% of the screen away from the right)*/
 #deskpic {
   position: absolute;
   top: 104%;
   right: 45%;
 }
 
+/*Lines 137-142 are used to control the attributes of the image of the kid on a chromebook on the home page. The attribute(s) set are: position (set to be absolute to the position given), top (sets the object to be 140% of the screen away from the top), right (sets the object to be 45% of the screen away from the right)*/
 #chromebookpic {
   position: absolute;
   top: 140%;
   right: 45%;
 }
 
+/*Lines 145-149 are used to control the attributes of the small logo at the bottom left corner of each sub-page. The attribute(s) set are: position (set to be absolute to the position given), left (sets the object to be 0.5% of the screen away from the left), bottom (sets the object to be -47% of the screen away from the bottom)*/
 #sublogo {
   position: absolute;
   left: 0.5%;

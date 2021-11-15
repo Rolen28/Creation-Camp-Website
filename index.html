@@ -3,31 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+
+    <!--This line of code affects what is placed in the text box on the small tab on the top of the screen-->
     <title>Creation Camp</title>
+
+    <!--This line of code brings in all the CSS code from the style.css file-->
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+
+    <!--This line of code brings in all the JavaScript code from the script.js file-->
     <script src="script.js"></script>
 
+    <!--This line of code brings in the image from the Creation Camp Logo.png and sets its size on the webpage-->
     <div id="Logo"><a href="index.html" title="Home"><img src="Creation Camp Logo.png" height="80"/></a></div>
 
+    <!--This line of code creates the navigation bar at the top of the webpage. It sets up the text and links-->
     <div id="Pages"><h1><a href="AppDevelop.html" title="Web App Development">Web App Development</a>   <a href="GameDevelop.html" title="Game Development">Game Development</a>  <a href="ContentCreate.html" title="Content Creation">Content Creation</a></h1></div>
 
+    <!--This line of code creates the welcome message on the title page-->
     <div id="welcome"><h1>Welcome to CreationCamp!</h1></div>
 
+    <!--This line of code creates the horizontal line below the welcome message-->
     <hr />
 
+    <!--This line of code is the beginning of the text on the left side of the title page-->
     <div id="firstdesc"><h2>Feel free to check out any of these courses by clicking on any of them.
       
+      <!--These 2 lines of code create the line breaks to seperate the list of courses and the earlier line of text-->
       <br />
       <br />
       
+      <!--These 5 lines of code list and link to the different courses in the CreationCamp program. Lines 39 and 41 are used to seperate them into different lines on the webpage-->
       <a href="AppDevelop.html" title="Web App Development">Web App Development</a>
       <br />
       <a href="GameDevelop.html" title="Game Development">Game Development</a>
       <br />
       <a href="ContentCreate.html" title="Content Creation">Content Creation</a></h2></div>
     
+    <!--Lines 45-60 are used to provide a small description about what the CreationCamp program is about. Lines that are blank are there for pleasant formatting and lines with <br /> are used for line breaks-->
     <div id="seconddesc"><h2>CreationCamp is a cooperative education program that has industry professionals teach students about digital online creation. There are three categories students can apply to join.
       
       <br />
@@ -45,18 +59,27 @@
       
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
 
+    <!--This line of code creates the small bit of text at the top of the form on the bottom left of the title page-->
     <div id="form"><h3>If you are interested in CreationCamp, please fill out this form (* means 'required'):</h3>
+
+      <!--Lines 68-124 are used to create the form on the bottom left of the page. Lines that are blank are there for pleasant formatting and lines with <br /> are used for line breaks-->
+
+      <!--This line of code is used to create the form identity and get it to use a function for form validation and a program to have its contents emailed to someone-->
       <form name="TitleForm" action="https://formsubmit.co/akhan70@ocdsb.ca" onsubmit="return validateForm()" method="POST">
+
+      <!--This line of code creates the Name input of the form-->
       Name*: <input type="text" name="name"/>
 
       <br />
       <br />
 
+      <!--This line of code creates the Age input of the form-->
       Age*: <input type="text" name="age"/>
 
       <br />
       <br />
 
+      <!--Lines 83-90 are used to create the gender input buttons on the form-->
       <input type="radio" name="gender" id="Male" value="Male"/>
       <label for="html">Male</label>
       <br />
@@ -69,20 +92,24 @@
       <br />
       <br />
 
+      <!--This line of code creates the phonenumber input of the form and the small bit of guidance text for users-->
       Phone Number*: <input type="tel" name="phonenumber" placeholder="(123)-456-7890"/>
 
       <br />
       <br />
       
+      <!--This line of code creates the email input of the form and the small bit of guidance text for users-->
       Email*: <input type="text" name="email" placeholder="example@someplace.com"/>
 
       <br />  
       <br />
 
+      <!--This line of code creates the small bit of text above the course selection portion of the form-->
       Which program(s) are you interested in?
 
       <br />
 
+      <!--Lines 113-117 create the checkbox inputs for the course selection portion of the form-->
       Web App Development <input type="checkbox" name="program" value="Web App Development"/>
       <br />
       Game Development <input type="checkbox" name="program" value="Game Development"/>
@@ -91,10 +118,12 @@
 
       <br />
       <br />
-
+      
+      <!--This line of code creates the submit button-->
       <input type="submit" name="submit"/>
       </form></div>
 
+    <!--The next 4 lines of code with actual code in it are used to create the images of people on computers from the files given and sets the images' dimensions-->
     <div id="pic1"><img src="student-facing-computer.jpg" height="148.5"/></div>
 
     <div id="pic2"><img src="codingkid.jpg" height="125"/></div>
